@@ -1,0 +1,11 @@
+.titleWrapper .partLeft h3 {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 45px;
+}
+
+.titleWrapper .partLeft span {
+  color: var(--grey-60);
+  font-weight: 500;
+  font-size: 14px;
+}

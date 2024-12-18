@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+/* Font Family */
+@font-face {
+  font-family: "Urbanist";
+  src: url("../public/fonts/Urbanist-VariableFont.ttf");
+  font-weight: 100 900; /* Supports a range of weights from 100 to 900 */
+  font-style: normal; /* Supports both normal and italic styles */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../public/fonts/Urbanist-Italic-VariableFont.ttf");
+  font-weight: 100 900; /* Supports a range of weights from 100 to 900 */
+  font-style: italic; /* Supports both normal and italic styles */
+  font-display: swap;
+}
+
+/* Site Variables */
+:root {
+  --font: "Urbanist", sans-serif;
+
+  --white: #fff;
+  --black: #000;
+
+  --purple-60: #703bf7;
+  --purple-65: #8254f8;
+  --purple-70: #946cf9;
+  --purple-75: #a685fa;
+  --purple-90: #dbcefd;
+  --purple-95: #ede7fe;
+  --purple-97: #f4f0fe;
+  --purple-99: #fbfaff;
+
+  --white-90: #e4e4e7;
+  --white-95: #f1f1f3;
+  --white-97: #f7f7f8;
+  --white-99: #fcfcfd;
+
+  --grey-8: #141414;
+  --grey-10: #1a1a1a;
+  --grey-15: #262626;
+  --grey-20: #333333;
+  --grey-30: #4d4d4d;
+  --grey-40: #666666;
+  --grey-50: #808080;
+  --grey-60: #999999;
+}
+
+body,
+button {
+  font-family: var(--font) !important;
+  font-weight: 400;
+}
+
+body {
+  background-color: var(--grey-8);
+}
