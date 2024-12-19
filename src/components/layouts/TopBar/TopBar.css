@@ -1,0 +1,39 @@
+.top-bar {
+  background-image: url(../../../../public/images/topbar/bg.svg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 63px;
+  padding: 5px 32px;
+  gap: 25px;
+}
+
+.top-bar h5 {
+  font-weight: 500;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.top-bar .close-icon {
+  height: 32px;
+  width: 32px;
+  min-height: 32px;
+  min-width: 32px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .top-bar h5 {
+    text-align: left;
+    font-size: 14px;
+  }
+  .top-bar {
+    padding: 5px 15px;
+  }
+}

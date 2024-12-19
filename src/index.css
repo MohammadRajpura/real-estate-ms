@@ -6,6 +6,7 @@
 
 a {
   text-decoration: none;
+  color: var(--white);
 }
 
 img {
@@ -70,8 +71,13 @@ body,
 button {
   font-family: var(--font) !important;
   font-weight: 400;
+  color: var(--white);
 }
 
 body {
   background-color: var(--grey-8);
+}
+
+.text-underline {
+  text-decoration: underline;
 }
