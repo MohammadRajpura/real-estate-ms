@@ -1,0 +1,31 @@
+.circle {
+  height: 129px;
+  width: 129px;
+  border-radius: 100%;
+  background-color: var(--grey-8);
+  border: 1.5px solid var(--grey-15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 3;
+  left: -65px;
+  top: 95px;
+}
+
+.circle::after {
+  content: "";
+  height: 58px;
+  width: 58px;
+  border-radius: 100%;
+  background-color: var(--grey-10);
+  border: 1.5px solid var(--grey-15);
+  position: absolute;
+  margin: auto;
+  z-index: 0;
+}
+
+.circle .arrow-icon {
+  position: relative;
+  z-index: 1;
+}

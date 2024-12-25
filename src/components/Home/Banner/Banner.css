@@ -1,0 +1,130 @@
+.banner-info {
+  padding-top: 95px;
+}
+
+.banner-info h2 {
+  font-weight: 600;
+  font-size: 46px;
+  margin-bottom: 20px;
+}
+
+.banner-info span {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--grey-60);
+}
+
+.browse-content {
+  margin-top: 50px;
+}
+
+.browse-content a:first-child {
+  margin-right: 16px;
+}
+
+.site-information {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.site-information-item {
+  border: 1px solid var(--grey-15);
+  background-color: var(--grey-10);
+  padding: 14px 20px;
+  border-radius: 10px;
+}
+
+.site-information-item h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 15px;
+}
+
+.site-information-item span {
+  color: var(--grey-60);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.banner-image {
+  position: relative;
+  background-color: var(--grey-10);
+  height: 100%;
+}
+
+.banner-image img {
+  z-index: 1;
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+.banner-image::before {
+  content: "";
+  background-image: url("../../../../public/images/banner-pattern.png");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-position: right;
+  z-index: 0;
+  background-repeat: no-repeat;
+}
+
+.banner-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(42, 33, 63);
+  background: linear-gradient(
+    212deg,
+    rgba(42, 33, 63, 1) 6%,
+    rgba(25, 25, 25, 0) 49%
+  );
+}
+
+@media (max-width: 767px) {
+  .banner-image {
+    margin: 0 16px;
+    border: 1px solid var(--grey-15);
+    border-radius: 12px;
+  }
+
+  .banner-info {
+    padding-top: 0;
+  }
+
+  .banner-info h2 {
+    font-size: 30px;
+  }
+
+  .browse-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .browse-content a {
+    width: 100%;
+    margin-right: 0 !important;
+  }
+
+  .site-information-item {
+    width: calc(50% - 8px);
+  }
+
+  .site-information-item:last-child {
+    width: 100%;
+  }
+}

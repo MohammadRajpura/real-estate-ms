@@ -18,7 +18,7 @@ const NavBarSite = () => {
           {/* Navbar Items */}
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse
-            className="justify-content-center"
+            className="justify-content-between"
             id="basic-navbar-nav"
           >
             <Nav className="">
@@ -27,12 +27,12 @@ const NavBarSite = () => {
               <Nav.Link href="#home">Properties</Nav.Link>
               <Nav.Link href="#home">Services</Nav.Link>
             </Nav>
+            <div className="contact">
+              <Button buttonType="outline" color="grey-8">
+                Contact Us
+              </Button>
+            </div>
           </Navbar.Collapse>
-          <div className="contact">
-            <Button buttonType="outline" color="grey-8">
-              Contact Us
-            </Button>
-          </div>
         </Container>
       </Navbar>
     </>
