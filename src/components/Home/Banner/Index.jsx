@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Button from "../../utility/Button/Button";
 import "./Banner.css";
 import bannerImage from "../../../../public/images/banner.png";
+import Circle from "./Circle/Index";
 
 const Banner = () => {
   return (
@@ -56,7 +57,7 @@ const Banner = () => {
             </Col>
             <Col xs-12 md="6" className="order-1 order-md-2 position-relative">
               {/* Circle */}
-              {/* <Circle /> */}
+              <Circle />
               <div className="banner-image">
                 <img src={bannerImage} alt="Banner Image" />
               </div>

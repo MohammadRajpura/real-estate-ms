@@ -26,6 +26,6 @@
 }
 
 .circle .arrow-icon {
-  position: relative;
+  position: absolute;
   z-index: 1;
 }
